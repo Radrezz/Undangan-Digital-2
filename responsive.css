@@ -1,0 +1,279 @@
+/* --- Responsive Logic for All Devices --- */
+
+/* Large Screens */
+@media (max-width: 1200px) {
+    .hero-title {
+        font-size: 10rem;
+    }
+}
+
+/* Tablets & Small Laptops */
+@media (max-width: 991px) {
+    .editorial-grid {
+        display: block;
+    }
+
+    .hero-title {
+        font-size: 8rem;
+    }
+
+    .couple-wrap {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .event-sticky-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .event-image-side {
+        height: 60vh;
+        /* Slightly taller for mobile content */
+        position: relative;
+        top: 0;
+        margin-bottom: 0;
+    }
+
+    .event-image-side h2 {
+        font-size: 3rem !important;
+        /* Shrink 'The Registry' on mobile */
+        bottom: 10px !important;
+    }
+
+    .event-details-side {
+        margin-top: -80px;
+        /* Overlap effect */
+        position: relative;
+        z-index: 10;
+        padding: 0 15px;
+    }
+
+    .event-box {
+        background: var(--bg-main);
+        padding: 40px 30px !important;
+        border-radius: 15px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+        border-bottom: none !important;
+    }
+
+    .section-couple {
+        padding: 80px 0;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .hero-title {
+        font-size: 5rem;
+        line-height: 1;
+    }
+
+    .hero-countdown {
+        gap: 20px;
+    }
+
+    .countdown-unit .number {
+        font-size: 2rem;
+    }
+
+    .layer-wayang img {
+        height: 50vh;
+    }
+
+    .gallery-scattered {
+        height: 120vh;
+        /* More height for vertical scattering */
+        position: relative;
+        display: block;
+        /* Remove grid */
+    }
+
+    .gallery-scatter-item {
+        position: absolute;
+        box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.2);
+        border: 4px solid var(--pure-white);
+        transition: transform 0.3s ease;
+    }
+
+    /* Scattered placements for mobile (Scaled & Overlapping) */
+    .gallery-scatter-item:nth-child(1) {
+        width: 60vw !important;
+        left: 5% !important;
+        top: 0 !important;
+        transform: rotate(-5deg) !important;
+        z-index: 2;
+    }
+
+    .gallery-scatter-item:nth-child(2) {
+        width: 50vw !important;
+        right: 5% !important;
+        top: 15% !important;
+        transform: rotate(8deg) !important;
+        z-index: 1;
+    }
+
+    .gallery-scatter-item:nth-child(3) {
+        width: 65vw !important;
+        left: 10% !important;
+        top: 40% !important;
+        transform: rotate(-3deg) !important;
+        z-index: 3;
+    }
+
+    .gallery-scatter-item:nth-child(4) {
+        width: 55vw !important;
+        right: 2% !important;
+        top: 65% !important;
+        transform: rotate(5deg) !important;
+        z-index: 2;
+    }
+
+    .person-card h3 {
+        font-size: 2.5rem;
+    }
+
+    .story-box {
+        padding: 40px 20px;
+    }
+
+    .story-box h2 {
+        font-size: 2.2rem;
+    }
+
+    .section-gallery h2 {
+        font-size: 3rem !important;
+        margin-bottom: 40px !important;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 3.5rem;
+    }
+
+    .hero-countdown {
+        gap: 10px;
+    }
+
+    .countdown-unit .number {
+        font-size: 1.5rem;
+    }
+
+    .hero-line {
+        width: 30px;
+    }
+
+    .hero-bottom {
+        gap: 20px;
+    }
+
+    .event-box h3 {
+        font-size: 2.2rem !important;
+    }
+
+    .event-box {
+        padding: 30px 20px !important;
+    }
+
+    /* Invitation Cover Mobile */
+    .couple-names {
+        font-size: 2.8rem;
+    }
+
+    #guest-name-display {
+        font-size: 1.8rem;
+    }
+
+    .invitation-cover {
+        padding: 20px;
+    }
+}
+
+/* Very Small Devices (under 375px) */
+@media (max-width: 375px) {
+    .hero-title {
+        font-size: 2.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.7rem;
+        letter-spacing: 0.2em;
+    }
+
+    .hero-countdown {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .countdown-unit {
+        flex: 1 1 40%;
+    }
+
+    .countdown-unit .number {
+        font-size: 1.6rem;
+    }
+
+    .event-box h3 {
+        font-size: 1.8rem !important;
+    }
+
+    .event-box h4 {
+        font-size: 0.7rem !important;
+    }
+
+    .event-box p {
+        font-size: 0.9rem !important;
+    }
+
+    .event-box {
+        padding: 25px 20px !important;
+    }
+
+    .person-card h3 {
+        font-size: 1.8rem;
+    }
+
+    .hero-line {
+        display: none;
+    }
+
+    .music-sticky {
+        right: 20px;
+        bottom: 20px;
+    }
+
+    .music-toggle {
+        width: 50px;
+        height: 50px;
+    }
+
+    .person-card {
+        margin-top: 40px !important;
+    }
+
+    .scroll-indicator {
+        bottom: 15px;
+        opacity: 0.8;
+    }
+
+    .scroll-line {
+        height: 30px;
+    }
+}
+
+/* Extra Small Devices */
+@media (max-width: 320px) {
+    .hero-title {
+        font-size: 2.4rem;
+    }
+
+    .countdown-unit .number {
+        font-size: 1.4rem;
+    }
+}

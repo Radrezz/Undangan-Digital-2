@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wedding of Bambang & Leni | Digital Invitation</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="loader-wrapper">
+        <div class="loader-content">
+            <div class="loader-logo">B&L</div>
+            <div class="loader-line"></div>
+        </div>
+    </div>
+
+    <!-- Invitation Cover (Splash Screen) -->
+    <div class="invitation-cover" id="cover">
+        <div class="cover-bg"></div>
+        <div class="cover-content">
+            <div class="cover-header anime-cover">
+                <span class="wedding-of">THE WEDDING OF</span>
+                <h2 class="couple-names">Bambang & Leni</h2>
+            </div>
+
+            <div class="guest-info anime-cover">
+                <p>Kepada Bapak/Ibu/Saudara/i:</p>
+                <h3 id="guest-name-display">Nama Tamu</h3>
+                <p class="request">Kami Mengundang Anda Untuk Hadir Di Acara Pernikahan Kami</p>
+            </div>
+
+            <div class="cover-action anime-cover">
+                <button id="open-invitation" class="btn-open">
+                    <i class="fa-solid fa-envelope-open"></i> Buka Undangan
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Music -->
+    <div class="music-sticky" id="music-container">
+        <div class="music-toggle" id="music-btn">
+            <i class="fa-solid fa-play"></i>
+        </div>
+        <audio id="bg-audio" loop>
+            <source src="assets/music/Perunggu - Pastikan Riuh Akhiri Malammu (Official Music Video).mp3"
+                type="audio/mpeg">
+        </audio>
+    </div>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div id="parallax-stage">
+                <div class="parallax-layer" data-depth="0.1" style="width: 110%; height: 110%;">
+                    <div class="layer-bg" style="width:100%; height:100%;"></div>
+                </div>
+
+                <!-- Layer 1: Wayang (Paling Belakang) -->
+                <div class="parallax-layer" data-depth="0.2">
+                    <div class="layer-wayang">
+                        <img src="assets/images/wayang-parallax.png" alt="Wayang Background">
+                    </div>
+                </div>
+
+                <!-- Layer 2: Side Decorations (Top Corners) -->
+                <div class="parallax-layer" data-depth="0.4">
+                    <div class="layer-side-deco">
+                        <div class="side-deco side-left">
+                            <img src="assets/images/side-parallax.png" alt="Side Decoration Left">
+                        </div>
+                        <div class="side-deco side-right">
+                            <img src="assets/images/side-parallax.png" alt="Side Decoration Right">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+            <div class="hero-content">
+                <span class="hero-subtitle anime-init">The Wedding Celebration</span>
+                <h1 class="hero-title anime-init">Bambang<br>& Leni</h1>
+                <div class="hero-bottom anime-init">
+                    <div class="hero-date-wrap">
+                        <div class="hero-line"></div>
+                        <span class="hero-date">22.10.2026</span>
+                        <div class="hero-line"></div>
+                    </div>
+
+                    <!-- Countdown -->
+                    <div class="hero-countdown">
+                        <div class="countdown-unit">
+                            <span class="number" id="days">00</span>
+                            <span class="label">Days</span>
+                        </div>
+                        <div class="countdown-unit">
+                            <span class="number" id="hours">00</span>
+                            <span class="label">Hours</span>
+                        </div>
+                        <div class="countdown-unit">
+                            <span class="number" id="minutes">00</span>
+                            <span class="label">Min</span>
+                        </div>
+                        <div class="countdown-unit">
+                            <span class="number" id="seconds">00</span>
+                            <span class="label">Sec</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Simple Scroll Indicator -->
+            <div class="scroll-indicator anime-init">
+                <span>Explore More</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- Couple Section -->
+        <section class="section-couple" id="couple">
+            <div class="scroll-text" id="marquee">BAMBANG AND LENI • THE WEDDING • OCT 2026 • </div>
+            <div class="container">
+                <div class="couple-wrap">
+                    <!-- Groom -->
+                    <div class="person-card groom reveal-up">
+                        <div class="v-title">The Groom</div>
+                        <div class="frame-mask">
+                            <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1200&auto=format&fit=crop"
+                                alt="Bambang Perkasa">
+                        </div>
+                        <div class="person-info">
+                            <h3>Bambang Perkasa</h3>
+                            <p style="margin-top: 10px; opacity: 0.8;">Putra dari Bapak & Ibu Montague</p>
+                            <a href="#"
+                                style="color: #bf9563; text-decoration: none; display: block; margin-top: 10px;">@bambang.prks</a>
+                        </div>
+                    </div>
+
+                    <!-- Bride -->
+                    <div class="person-card bride reveal-up">
+                        <div class="v-title">The Bride</div>
+                        <div class="frame-mask" style="transform: rotate(5deg);">
+                            <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1200&auto=format&fit=crop"
+                                alt="Leni Marlina">
+                        </div>
+                        <div class="person-info">
+                            <h3>Leni Marlina</h3>
+                            <p style="margin-top: 10px; opacity: 0.8;">Putri dari Bapak & Ibu Capulet</p>
+                            <a href="#"
+                                style="color: #bf9563; text-decoration: none; display: block; margin-top: 10px;">@leni.mrlna</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Parallax Story -->
+        <section class="parallax-section">
+            <div class="parallax-img-bg" id="story-parallax-bg"></div>
+            <div class="story-box reveal-up">
+                <h4>Our Journey</h4>
+                <h2>A Thousand Years of Love</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id finibus dui, vitae varius neque.
+                    Sed accumsan erat in sem vulputate, sit amet condimentum nisi tincidunt.</p>
+                <div
+                    style="margin-top: 30px; font-family: var(--font-serif); font-size: 1.5rem; color: var(--accent-gold);">
+                    B & L</div>
+            </div>
+        </section>
+
+        <!-- Events Section -->
+        <section class="section-events" id="event">
+            <div class="container">
+                <div class="event-sticky-grid">
+                    <div class="event-image-side" style="position: sticky; top: 10vh; height: 80vh;">
+                        <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=2074&auto=format&fit=crop"
+                            style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                        <h2
+                            style="position: absolute; bottom: 20px; left: 20px; font-size: 3.5rem; font-family: var(--font-serif); color: var(--pure-white); white-space: nowrap; text-shadow: 2px 2px 10px rgba(0,0,0,0.3);">
+                            The Registry</h2>
+                    </div>
+
+                    <div class="event-details-side">
+                        <div class="event-box reveal-up">
+                            <h4>Special Ceremony</h4>
+                            <h3>Akad Nikah</h3>
+                            <p style="font-size: 1.2rem; margin-bottom: 20px;">Sabtu, 22 Oktober 2026<br>09:00 - 11:00
+                                WIB</p>
+                            <p style="font-size: 1.1rem; opacity: 0.8; line-height: 1.6; margin-bottom: 30px;">
+                                Gedung Merdeka, Bandung<br>
+                                Jl. Asia Afrika No.65, Kota Bandung, Jawa Barat
+                            </p>
+                            <a href="https://maps.app.goo.gl/8cEHFMZnFg6vUnZbA" target="_blank" class="btn-cta">Open
+                                Maps</a>
+                        </div>
+
+                        <div class="event-box reveal-up">
+                            <h4>The Celebration</h4>
+                            <h3>Resepsi Pernikahan</h3>
+                            <p style="font-size: 1.2rem; margin-bottom: 20px;">Sabtu, 22 Oktober 2026<br>13:00 - 17:00
+                                WIB</p>
+                            <p style="font-size: 1.1rem; opacity: 0.8; line-height: 1.6; margin-bottom: 30px;">
+                                Hotel Savoy Homann<br>
+                                Jl. Asia Afrika No.112, Kota Bandung, Jawa Barat
+                            </p>
+                            <a href="https://maps.app.goo.gl/1DohA9pcZ1UPHzqU8" target="_blank" class="btn-cta">Open
+                                Maps</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="section-gallery">
+            <div class="container">
+                <h2 style="font-family: var(--font-serif); font-size: 5rem; text-align: center; margin-bottom: 80px;">
+                    Captured Moments</h2>
+                <div class="gallery-scattered">
+                    <div class="gallery-scatter-item p-item" style="top: 0; left: 10%; width: 300px;" data-speed="0.1">
+                        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=800&auto=format&fit=crop"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="gallery-scatter-item p-item" style="top: 20%; right: 15%; width: 250px;"
+                        data-speed="0.3"><img
+                            src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=800&auto=format&fit=crop"
+                            style="width: 100%; height: 100%; object-fit: cover;"></div>
+                    <div class="gallery-scatter-item p-item" style="top: 50%; left: 5%; width: 350px;" data-speed="0.2">
+                        <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=800&auto=format&fit=crop"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="gallery-scatter-item p-item" style="bottom: 10%; right: 5%; width: 300px;"
+                        data-speed="0.4"><img
+                            src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=800&auto=format&fit=crop"
+                            style="width: 100%; height: 100%; object-fit: cover;"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gift Section -->
+        <section class="section-gift" id="gift" style="padding: 100px 0; background: var(--bg-main);">
+            <div class="container">
+                <div class="editorial-grid">
+                    <div style="grid-column: 1 / span 12; text-align: center;" class="reveal-up">
+                        <h2 style="font-family: var(--font-serif); font-size: 3.5rem;">Wedding Gift</h2>
+                        <p style="margin-top: 20px;">Doa restu Anda adalah anugerah terbesar. Namun jika Anda ingin
+                            memberikan tanda kasih, Anda dapat mengirimkannya melalui:</p>
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 50px;"
+                    class="reveal-up">
+
+                    <!-- Bank Card -->
+                    <div class="gift-box"
+                        style="background: transparent; border: 1px solid var(--accent-gold); padding: 40px; text-align: center; max-width: 380px; width: 100%; transition: all 0.3s;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Bank_Central_Asia.svg" alt="BCA"
+                            style="height: 30px; margin-bottom: 25px;">
+                        <p
+                            style="font-size: 1.8rem; letter-spacing: 2px; font-family: var(--font-serif); margin-bottom: 15px; color: var(--accent-gold);">
+                            1234567890</p>
+                        <p style="margin-bottom: 25px; opacity: 0.8;">a/n Bambang Perkasa</p>
+                        <button onclick="copyValue('1234567890', this)" class="btn-cta"
+                            style="border: 1px solid var(--accent-gold); background: transparent; color: var(--accent-gold); padding: 12px 30px; cursor: pointer; transition: all 0.3s; width: 100%;">
+                            Salin Rekening
+                        </button>
+                    </div>
+
+                    <!-- Address Card -->
+                    <div class="gift-box"
+                        style="background: transparent; border: 1px solid var(--accent-gold); padding: 40px; text-align: center; max-width: 380px; width: 100%; transition: all 0.3s;">
+                        <i class="fas fa-gift"
+                            style="font-size: 2.5rem; color: var(--accent-gold); margin-bottom: 20px; display: block;"></i>
+                        <h4 style="font-family: var(--font-serif); font-size: 1.5rem; margin-bottom: 15px;">Kirim Kado
+                        </h4>
+                        <p style="margin-bottom: 25px; opacity: 0.8; line-height: 1.6;">
+                            Hotel Savoy Homann<br>
+                            Jl. Asia Afrika No.112, Kota Bandung<br>
+                            Jawa Barat 40261
+                        </p>
+                        <button
+                            onclick="copyValue('Hotel Savoy Homann, Jl. Asia Afrika No.112, Kota Bandung, Jawa Barat 40261', this)"
+                            class="btn-cta"
+                            style="border: 1px solid var(--accent-gold); background: transparent; color: var(--accent-gold); padding: 12px 30px; cursor: pointer; transition: all 0.3s; width: 100%;">
+                            Salin Alamat
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- RSVP & Guestbook -->
+        <section class="section-rsvp" style="padding: 150px 0; background: var(--bg-main);" id="rsvp">
+            <div class="container">
+                <div class="editorial-grid">
+                    <div style="grid-column: 1 / span 5;">
+                        <h2 style="font-family: var(--font-serif); font-size: 4rem;">Kindly Respond</h2>
+                        <p style="margin-top: 20px;">Kami sangat menantikan kehadiran Bapak/Ibu/Saudara/i untuk
+                            melengkapi kebahagiaan kami.</p>
+                    </div>
+                    <div style="grid-column: 7 / span 6;">
+                        <form id="rsvp-form" style="display: flex; flex-direction: column; gap: 20px;">
+                            <input type="text" id="guest-name-input" placeholder="Nama Anda"
+                                style="padding: 20px; background: transparent; border: none; border-bottom: 1px solid #8c704f; outline: none; font-size: 1.1rem;"
+                                required>
+                            <select id="guest-rsvp-input"
+                                style="padding: 20px; background: transparent; border: none; border-bottom: 1px solid #8c704f; outline: none; font-size: 1.1rem;"
+                                required>
+                                <option value="" disabled selected>Pilih Kehadiran</option>
+                                <option value="Hadir">Saya Akan Hadir</option>
+                                <option value="Berhalangan">Mohon Maaf, Berhalangan</option>
+                            </select>
+                            <textarea id="guest-message-input" placeholder="Pesan untuk kami..." rows="5"
+                                style="padding: 20px; background: transparent; border: none; border-bottom: 1px solid #8c704f; outline: none; font-size: 1.1rem; resize: none;"
+                                required></textarea>
+                            <button type="submit" id="submit-btn" class="btn-cta"
+                                style="border: none; cursor: pointer;">Send
+                                Message</button>
+                        </form>
+
+                        <!-- Dynamic wishes container -->
+                        <div id="wishes-list" style="margin-top: 50px;">
+                            <!-- Wishes loaded here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <footer style="padding: 100px 0; text-align: center; border-top: 1px solid rgba(140, 112, 79, 0.1);">
+            <div style="font-family: var(--font-serif); font-size: 2rem; margin-bottom: 20px;">B & L</div>
+            <p style="opacity: 0.5; font-size: 0.8rem;">DESIGNED FOR BAMBANG & LENI 2026</p>
+        </footer>
+    </main>
+
+    <!-- JS Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+
+    <!-- Parallax.js for Matthew Wagerfield Logic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
+    <!-- Supabase -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
